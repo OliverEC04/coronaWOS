@@ -4,9 +4,12 @@ function setup()
     {
         var window = createVector(800, 600);
         createCanvas(window.x, window.y);
+        
     }
   
 function draw()
     {
-        
+    var sitreVal = random(-5,6);
+    var xPos = random(window.x)
+    var yPos = random(window.y)
     }
