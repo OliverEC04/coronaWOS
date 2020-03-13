@@ -9,5 +9,4 @@ function setup()
   
 function draw()
     {
-    var sitreVal = random(-5,6);
     }
