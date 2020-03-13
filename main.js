@@ -4,9 +4,14 @@ function setup()
     {
         var window = createVector(800, 600);
         createCanvas(window.x, window.y);
-        
+        for (i=0; i<cirkelAntal}
+
+            cirkelListe.push(i);
+            
     }
   
 function draw()
     {
+        
+
     }
