@@ -10,6 +10,4 @@ function setup()
 function draw()
     {
     var sitreVal = random(-5,6);
-    var xPos = random(window.x)
-    var yPos = random(window.y)
     }
