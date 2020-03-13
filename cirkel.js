@@ -12,6 +12,7 @@ class Cirkel
 
   draw()
   {
-    
+    fill(this.farve);
+    circle(this.position.x, this.position.y, 15)
   }
 }
