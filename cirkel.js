@@ -15,6 +15,7 @@ class Cirkel
     }
 
     p5.Vector.add(random(-5, 5), random(-5, 5), this.position);
+    console.log(this.position);
   }
 
   draw()
