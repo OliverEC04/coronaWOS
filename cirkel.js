@@ -2,14 +2,12 @@ class Cirkel
 {
   constructor(status)
   {
-    this.position = position;
     this.status = status;
   }
 
   update()
   {
-    var xPos = random(window.x)
-    var yPos = random(window.y)
+    var position = createVector(random(0, window.x), random(0, window.y));
   }
 
   draw()
