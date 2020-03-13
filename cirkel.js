@@ -1,6 +1,6 @@
 class Cirkel
 {
-  constructor(position, status)
+  constructor(status)
   {
     this.position = position;
     this.status = status;
