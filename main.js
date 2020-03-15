@@ -15,7 +15,7 @@ function setup()
 function draw()
     {
         background(255);
-        frameRate(20);
+        frameRate(60);
 
         for (i=0; i<cirkelAntal; i++)
         {
