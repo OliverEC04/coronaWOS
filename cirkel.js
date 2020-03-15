@@ -7,7 +7,25 @@ class Cirkel
     this.window = window;
     this.position = createVector(random(window.x), random(window.y));
     this.radius = 15;
-  }
+    this.farveskift = function()
+    {
+      this.farve = color(255, 0, 0);
+    }
+    /*this.overlap = funtion(other)
+    {
+      var afstand = dist(this.position.x, this.position.y, other.position.x, other.position.y);
+      if (afstand > (this.radius + other.radius)) 
+      {
+          return true;
+      }
+      else
+      {
+        return false;
+      }
+         
+      }*/
+    }
+  
 
   update()
   {

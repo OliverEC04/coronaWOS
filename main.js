@@ -11,19 +11,6 @@ function setup()
             cirkelListe.push(new Cirkel(0, window));
         }
     }
-  
-/*this.distance = function(other)
-    {
-        afstand = dist(this.x, this.y, other.x, other.y);
-        if (afstand > (Cirkel.radius + other.radius)) 
-        {
-            return true;
-        }
-            else
-            {
-                return false;
-            }
-        }*/
 
 function draw()
     {
@@ -34,6 +21,14 @@ function draw()
         {
             cirkelListe[i].update();
             cirkelListe[i].draw();
-            //cirkelListe[i].this.distance()
+            
+           /* for (var j = 0; j < cirkelAntal; j++)
+            {
+                if(i != j && cirkelListe[i].overlap(cirkelListe[j]))
+                {
+                    cirkelListe[i].farveskift();
+                    cirkelListe[j].farveskift();
+                }
+            }*/
         }
     }
