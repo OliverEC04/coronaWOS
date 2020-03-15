@@ -5,6 +5,7 @@ class Cirkel
     this.status = status;
     this.farve = color(0);
     this.position = createVector(random(window.x), random(window.y));
+    this.radius = 15;
   }
 
   update()
@@ -21,6 +22,6 @@ class Cirkel
   draw()
   {
     fill(this.farve);
-    circle(this.position.x, this.position.y, 15);
+    circle(this.position.x, this.position.y, this.radius);
   }
 }
