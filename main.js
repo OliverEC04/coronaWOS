@@ -25,7 +25,7 @@ this.distance = function(other)
             }
         }
 
-        function draw()
+function draw()
     {
         background(255);
         frameRate(60);
