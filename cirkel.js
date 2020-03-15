@@ -4,7 +4,7 @@ class Cirkel
   {
     this.status = status;
     this.farve = color(0);
-    this.position = createVector(random(0, window.x), random(0, window.y));
+    this.position = createVector(random(window.x), random(window.y));
   }
 
   update()
