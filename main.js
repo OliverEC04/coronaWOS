@@ -8,7 +8,7 @@ function setup()
         cirkelListe=[];
         for (i=0; i<cirkelAntal; i++)
         {
-            cirkelListe.push(new Cirkel(0));
+            cirkelListe.push(new Cirkel(0, window));
         }
     }
   

@@ -1,6 +1,6 @@
 class Cirkel
 {
-  constructor(status)
+  constructor(status, window)
   {
     this.status = status;
     this.farve = color(0);
