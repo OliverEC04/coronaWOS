@@ -10,6 +10,11 @@ function setup()
         {
             cirkelListe.push(new Cirkel(0, window));
         }
+
+        this.distance()
+        {
+            distance = sqrt((x2-x1)**2 + (y2-y1)**2); 
+        }
     }
   
 function draw()

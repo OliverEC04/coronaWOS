@@ -5,7 +5,6 @@ class Cirkel
     this.status = status;
     this.farve = color(0);
     this.position = createVector(random(window.x), random(window.y));
-    this.distance = sqrt((x2-x1)**2 + (y2-y1)**2)
   }
 
   update()
