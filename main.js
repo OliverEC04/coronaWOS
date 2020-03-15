@@ -21,7 +21,7 @@ this.distance = function(other)
         }
             else
             {
-                return false
+                return false;
             }
         }
 
