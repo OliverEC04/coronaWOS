@@ -31,7 +31,7 @@ class Cirkel
     if (this.position.y + this.radius < window.y)
     {
       this.position.y += random(-2, 2);
-
+    }
     /*
     if (this.position.x - this.radius <= 0)
     {
