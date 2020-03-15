@@ -14,6 +14,8 @@ function setup()
   
 function draw()
     {
+        background(255);
+
         for (i=0; i<cirkelAntal; i++)
         {
             cirkelListe[i].update();
