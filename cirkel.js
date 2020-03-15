@@ -14,8 +14,8 @@ class Cirkel
       this.farve = color(255, 0, 0);
     }
 
-    this.position.x += random(-1, 1);
-    this.position.y += random(-1, 1);
+    this.position.x += random(-2, 2);
+    this.position.y += random(-2, 2);
   }
 
   draw()
