@@ -10,14 +10,22 @@ function setup()
         {
             cirkelListe.push(new Cirkel(0, window));
         }
-
-        this.distance = function()
-        {
-            this.afstand = sqrt((x2-x1)**2 + (y2-y1)**2); 
-        }
     }
   
-function draw()
+this.distance = function(other)
+    {
+        afstand = dist(this.x, this.y, other.x, other.y);
+        if (afstand > Cirkel.radius + other.radius) 
+        {
+            return true;
+        }
+            else
+            {
+                return false
+            }
+        }
+
+        function draw()
     {
         background(255);
         frameRate(60);
