@@ -15,13 +15,13 @@ function setup()
 this.distance = function(other)
     {
         afstand = dist(this.x, this.y, other.x, other.y);
-        if (afstand > Cirkel.radius + other.radius) 
+        if (afstand > (Cirkel.radius + other.radius)) 
         {
             return true;
         }
             else
             {
-                return false
+                return false;
             }
         }
 
