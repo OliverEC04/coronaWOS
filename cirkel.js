@@ -4,6 +4,7 @@ class Cirkel
   {
     this.status = status;
     this.farve = color(0);
+    this.window = window;
     this.position = createVector(random(window.x), random(window.y));
     this.radius = 15;
   }
@@ -22,7 +23,7 @@ class Cirkel
     {
       this.position.x += 4;
     }
-    if (this.position.x + this.radius >= window.x)
+    if (this.position.x + this.radius >= this.window.x)
     {
       this.position.x -= 4;
     }
@@ -30,7 +31,7 @@ class Cirkel
     {
       this.position.y += 4;
     }
-    if (this.position.y + this.radius >= window.y)
+    if (this.position.y + this.radius >= this.window.y)
     {
       this.position.y -= 4;
     }
