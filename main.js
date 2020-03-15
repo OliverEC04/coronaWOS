@@ -12,7 +12,7 @@ function setup()
         }
     }
   
-this.distance = function(other)
+/*this.distance = function(other)
     {
         afstand = dist(this.x, this.y, other.x, other.y);
         if (afstand > (Cirkel.radius + other.radius)) 
@@ -23,7 +23,7 @@ this.distance = function(other)
             {
                 return false;
             }
-        }
+        }*/
 
 function draw()
     {
@@ -34,5 +34,6 @@ function draw()
         {
             cirkelListe[i].update();
             cirkelListe[i].draw();
+            //cirkelListe[i].this.distance()
         }
     }
