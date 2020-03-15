@@ -4,7 +4,7 @@ function setup()
     {
         var window = createVector(800, 600);
         createCanvas(window.x, window.y);
-        cirkelAntal = 100;
+        cirkelAntal = 10;
         cirkelListe=[];
         for (i=0; i<cirkelAntal; i++)
         {
