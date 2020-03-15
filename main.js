@@ -13,6 +13,9 @@ function setup()
   
 function draw()
     {
-        
-
+        for (i=0; i<cirkelAntal; i++)
+        {
+            cirkelListe[i].update();
+            cirkelListe[i].draw();
+        }
     }
