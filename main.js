@@ -13,7 +13,7 @@ function setup()
 
         this.distance = function()
         {
-            distance = sqrt((x2-x1)**2 + (y2-y1)**2); 
+            this.afstand = sqrt((x2-x1)**2 + (y2-y1)**2); 
         }
     }
   
