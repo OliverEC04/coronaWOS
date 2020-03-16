@@ -6,7 +6,7 @@ class Cirkel
     this.farve = color(0);
     this.window = window;
     this.position = createVector(random(window.x), random(window.y));
-    this.dia = 15;
+    this.dia = 10;
 
     /*
     function farveskift()
