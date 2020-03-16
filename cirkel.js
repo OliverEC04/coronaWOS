@@ -36,6 +36,7 @@ class Cirkel
     {
       var antalSyge = antalSyge++
       return antalSyge
+      console.log(antalSyge)
     }
 
   }
