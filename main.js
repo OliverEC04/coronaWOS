@@ -1,17 +1,22 @@
 ///<reference path="p5.global-mode.d.ts" />
 
-var canvas;
-
 function setup()
 {
-    var window = createVector(800, 600);
-    canvas = createCanvas(window.x, window.y);
-    canvas.position(0, 0);
+    var spredningStr = createVector(400, 400);
+    var spredning = createCanvas(spredningStr.x, spredningStr.y);
+    spredning.position(0, 0);
+
+    /*
+    var grafStr = createCanvas(400, 400);
+    var graf = createCanvas(graf.x, spredningStr.y);
+    spredning.position(0, 0);
+    */
+
     cirkelAntal = 100;
-    cirkelListe=[new Cirkel(1, window)];
+    cirkelListe=[new Cirkel(1, spredningStr)];
     for (i=0; i<cirkelAntal; i++)
     {
-        cirkelListe.push(new Cirkel(0, window));
+        cirkelListe.push(new Cirkel(0, spredningStr));
     }
 }
 
