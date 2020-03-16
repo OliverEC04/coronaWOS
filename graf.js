@@ -1,7 +1,7 @@
 class Graf
 
-function tegnLinje
+tegnLinje()
 
 
 
-function tegn
+tegn()
