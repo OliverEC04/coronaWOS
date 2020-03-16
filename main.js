@@ -1,10 +1,12 @@
 ///<reference path="p5.global-mode.d.ts" />
 
+var canvas;
+
 function setup()
 {
     var window = createVector(800, 600);
-    createCanvas(window.x, window.y);
-    canvas.parent('can1');
+    canvas = createCanvas(window.x, window.y);
+    canvas.position(100, 100);
     cirkelAntal = 100;
     cirkelListe=[new Cirkel(1, window)];
     for (i=0; i<cirkelAntal; i++)
@@ -15,7 +17,7 @@ function setup()
 
 function draw()
 {
-    background(255);
+    clear();
     frameRate(60);
 
     for (i=0; i<cirkelAntal; i++)
