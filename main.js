@@ -22,13 +22,13 @@ function draw()
             cirkelListe[i].update();
             cirkelListe[i].draw();
             
-           /* for (var j = 0; j < cirkelAntal; j++)
+            for (var j = 0; j < cirkelAntal; j++)
             {
-                if(i != j && cirkelListe[i].overlap(cirkelListe[j]))
+                if(i != j && cirkelListe[i].overlap(cirkelListe[j]) && (cirkelListe[i].status == 1 || cirkelListe[j].status == 1))
                 {
-                    cirkelListe[i].farveskift();
-                    cirkelListe[j].farveskift();
+                    cirkelListe[i].status = 1;
+                    cirkelListe[j].status = 1;
                 }
-            }*/
+            }
         }
     }
