@@ -29,6 +29,16 @@ class Cirkel
     }  
   }
   
+  countSyge(liste)
+  {
+    var syge = indexOf(liste)
+    if (syge != -1)
+    {
+      var antalSyge = antalSyge++
+      return antalSyge
+    }
+
+  }
 
   update()
   {
