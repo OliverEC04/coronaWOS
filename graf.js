@@ -1,7 +1,15 @@
 class Graf
+{
+tegnLinje()
+{
 
-function tegnLinje
+}
 
 
 
-function tegn
+tegn()
+{
+
+}
+
+}
