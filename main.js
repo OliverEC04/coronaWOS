@@ -6,6 +6,7 @@ function setup()
     createCanvas(window.x, window.y);
     canvas.parent('can1');
     cirkelAntal = 100;
+    syge = []
     cirkelListe=[new Cirkel(1, window)];
     for (i=0; i<cirkelAntal; i++)
     {
@@ -30,6 +31,14 @@ function draw()
                 cirkelListe[i].status = 1;
                 cirkelListe[j].status = 1;
             }
+        }
+    }
+
+    for (syge = 0; syge < cirkelAntal; syge++)
+    {
+        if(cirkelListe[syge].status == 1)
+        {
+            syge++
         }
     }
 }
