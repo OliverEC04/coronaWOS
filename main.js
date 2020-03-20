@@ -8,8 +8,8 @@ function setup()
 
     /*
     var grafStr = createCanvas(400, 400);
-    var graf = createCanvas(graf.x, spredningStr.y);
-    spredning.position(0, 0);
+    var graf = createCanvas(grafStr.x, grafStr.y);
+    graf.position(400, 0);
     */
 
     cirkelAntal = 100;
