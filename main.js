@@ -13,10 +13,6 @@ function setup()
     */
 
     cirkelAntal = 100;
-    raskeAntal = cirkelAntal;
-    sygeAntal = 1;
-    dodeAntal = 0;
-    helbredtAntal = 0;
     cirkelListe=[new Cirkel(1, spredningStr)];
     for (i=0; i<cirkelAntal; i++)
     {
@@ -38,20 +34,8 @@ function draw()
         {
             if(i != j && cirkelListe[i].overlap(cirkelListe[j]) && (cirkelListe[i].status == 1 || cirkelListe[j].status == 1))
             {
-                if (cirkelListe[i].status != 1)
-                {
-                    cirkelListe[i].status = 1;
-                    raskeAntal--;
-                    sygeAntal++;
-                    console.log(raskeAntal + " " + sygeAntal);
-                }
-                if (cirkelListe[j].status != 1)
-                {
-                    cirkelListe[j].status = 1;
-                    raskeAntal--;
-                    sygeAntal++;
-                    console.log(raskeAntal + " " + sygeAntal);
-                }
+                cirkelListe[i].status = 1;
+                cirkelListe[j].status = 1;
             }
         }
     }
