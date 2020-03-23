@@ -3,17 +3,10 @@ class Cirkel
   constructor(status, window)
   {
     this.status = status;
-    this.farve = color(0);
+    this.farve = color(0, 255, 0);
     this.window = window;
     this.position = createVector(random(window.x), random(window.y));
     this.dia = 10;
-
-    /*
-    function farveskift()
-    {
-      this.farve = color(255, 0, 0);
-    }
-    */
   }
 
   overlap(other)
@@ -43,29 +36,52 @@ class Cirkel
 
   update()
   {
-    if (this.status == 1)
+    if (this.status == 0 || this.status == 1 || this.status == 2 || this.status == 3)
     {
-      this.farve = color(255, 0, 0);
+      // smittet
+      if (this.status == 1)
+      {
+        this.farve = color(255, 0, 0);
+      }
+
+      // helbredt
+      if (this.status == 2)
+      {
+        this.farve = color(0, 0, 255);
+      }
+
+      // fool
+      if (this.status == 3)
+      {
+        this.farve = color(255, 150, 0);
+      }
+
+      this.position.x += random(-2, 2);
+      this.position.y += random(-2, 2);
+
+      if (this.position.x - this.dia <= 0)
+      {
+        this.position.x += 4;
+      }
+      if (this.position.x + this.dia >= this.window.x)
+      {
+        this.position.x -= 4;
+      }
+      if (this.position.y - this.dia <= 0)
+      {
+        this.position.y += 4;
+      }
+      if (this.position.y + this.dia >= this.window.y)
+      {
+        this.position.y -= 4;
+      }
+
     }
     
-    this.position.x += random(-2, 2);
-    this.position.y += random(-2, 2);
-
-    if (this.position.x - this.dia <= 0)
+    // død
+    if (this.status == 3)
     {
-      this.position.x += 4;
-    }
-    if (this.position.x + this.dia >= this.window.x)
-    {
-      this.position.x -= 4;
-    }
-    if (this.position.y - this.dia <= 0)
-    {
-      this.position.y += 4;
-    }
-    if (this.position.y + this.dia >= this.window.y)
-    {
-      this.position.y -= 4;
+      this.farve = color(0);
     }
   }
 

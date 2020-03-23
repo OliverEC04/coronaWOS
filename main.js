@@ -7,6 +7,7 @@ function setup()
     ramme.position(0, 0);
     indstillinger = sliders 
 
+    // 0 = ikke smittet, 1 = smittet, 2 = helbredt, 3 = fool, 4 = død
     var spredningStr = createVector(400, 400);
     cirkelAntal = 100;
     raskeAntal = cirkelAntal;
