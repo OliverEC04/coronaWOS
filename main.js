@@ -2,27 +2,28 @@
 var dodRate = 3.5;
 var spredningPos;
 var spredningStr;
+var cirkelAntal = 100;
+var raskeAntal = cirkelAntal;
+var sygeAntal = 1;
+var dodeAntal = 0;
+var helbredtAntal = 0;
 
 function setup()
 {
     var rammeStr = createVector(windowWidth, windowHeight);
     var ramme = createCanvas(rammeStr.x, rammeStr.y);
     ramme.position(0, 0);
-    sliders() 
-
-    // 0 = ikke smittet, 1 = smittet, 2 = helbredt, 3 = fool, 4 = død
+    
     spredningPos = createVector(0, 0);
     spredningStr = createVector(400, 400);
-    cirkelAntal = 100;
-    raskeAntal = cirkelAntal;
-    sygeAntal = 1;
-    dodeAntal = 0;
-    helbredtAntal = 0;
+    
     cirkelListe=[new Cirkel(1, spredningStr)];
     for (i=0; i<cirkelAntal; i++)
     {
         cirkelListe.push(new Cirkel(0, spredningStr));
     }
+
+    sliders() 
 }
 
 function draw()
