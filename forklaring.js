@@ -1,4 +1,4 @@
-function forklaring(position)
+function forklaring(pos, str)
 {
-    rect(0, 400, 400, 10);
+    rect(position.x, position.y + , 400, 10);
 }

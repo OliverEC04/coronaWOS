@@ -30,7 +30,7 @@ function draw()
     clear();
     frameRate(60);
     slidersValue()
-    forklaring(spredningStr);
+    forklaring(spredningPos, spredningStr);
 
     for (i=0; i<cirkelAntal; i++)
     {
