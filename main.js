@@ -73,14 +73,14 @@ function draw()
         }
     }
 
+    normalAntal = 0;
+    smittetAntal = 0;
+    helbredtAntal = 0;
+    foolAntal = 0;
+    dodAntal = 0;
+
     for (i = 0; i < cirkelAntal; i++)
     {
-        normalAntal = 0;
-        smittetAntal = 0;
-        helbredtAntal = 0;
-        foolAntal = 0;
-        dodAntal = 0;
-
         if (cirkelListe[i].status == 0)
         {
             normalAntal++;
@@ -102,11 +102,5 @@ function draw()
             dodAntal++;
         }
     }
-
-    console.log("normal: " + normalAntal);
-    console.log("smittet: " + smittetAntal);
-    console.log("helbredt: " + helbredtAntal);
-    console.log("fool: " + foolAntal);
-    console.log("dod: " + dodAntal);
 }
 

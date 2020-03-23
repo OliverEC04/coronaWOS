@@ -22,18 +22,6 @@ class Cirkel
       return false;
     }  
   }
-  
-  countSyge(liste)
-  {
-    var syge = indexOf(liste)
-    if (syge != -1)
-    {
-      var antalSyge = antalSyge++
-      return antalSyge
-      console.log(antalSyge)
-    }
-
-  }
 
   update()
   {
