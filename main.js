@@ -7,18 +7,23 @@ var spredningStr;
 var cirkelAntal = 100;
 
 var normalAntal = cirkelAntal;
+var normalData = [];
 var normalFarve;
 
 var smittetAntal = 0;
+var smittetData = [];
 var smittetFarve;
 
 var helbredtAntal = 0;
+var helbredtData = [];
 var helbredtFarve;
 
 var foolAntal = 0;
+var foolData = [];
 var foolFarve;
 
 var dodAntal = 0;
+var dodData = [];
 var dodFarve;
 
 function setup()
@@ -84,22 +89,27 @@ function draw()
         if (cirkelListe[i].status == 0)
         {
             normalAntal++;
+            normalData.push(normalAntal);
         }
         if (cirkelListe[i].status == 1)
         {
             smittetAntal++;
+            smittetData.push(smittetAntal);
         }
         if (cirkelListe[i].status == 2)
         {
             helbredtAntal++;
+            helbredtData.push(helbredtAntal);
         }
         if (cirkelListe[i].status == 3)
         {
             foolAntal++;
+            foolData.push(foolAntal);
         }
         if (cirkelListe[i].status == 4)
         {
             dodAntal++;
+            dodData.push(dodAntal);
         }
     }
 }
