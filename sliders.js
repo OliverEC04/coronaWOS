@@ -6,10 +6,18 @@ sliderAntalAlle = createSlider(0, 500, 100)
 sliderAntalAlle.position(400,20)
 sliderFools = createSlider(0,100,2)
 sliderFools.position(400,130)
-buttonGodHyg = createButton('God Hygiejne');
+buttonGodHyg = createButton('Alle bliver inde og holder meget god hygiene');
 buttonGodHyg.position(400, 160);
-buttonGodHyg.mousePressed("hvor meget folk smitter");
+buttonGodHyg.mousePressed("folk smitter 0,8 val.");
 buttonGodHyg.size(100)
+buttonMellemHyg = createButton(' De fleste bliver inde og god hygiene');
+buttonMellemHyg.position(430, 160);
+buttonMellemHyg.mousePressed("folk smitter 1,8 val.");
+buttonMellemHyg.size(100)
+buttonDårligHyg = createButton('Folk bevæger sig lidt rund, som vi gør nu og tænker ikke så meget på hygiene');
+buttonDårligHyg.position(460, 160);
+buttonDårligHyg.mousePressed("folk smitter 2,8 val.");
+buttonDårligHyg.size(100)
 }
 function slidersValue()
 {
