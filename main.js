@@ -1,6 +1,6 @@
 ///<reference path="p5.global-mode.d.ts" />
 var dodRate = 3.5;
-var spredningPos = createCanvas(0, 0);
+var spredningPos = createVector(0, 0);
 var spredningStr = createVector(400, 400);
 
 function setup()
