@@ -10,8 +10,9 @@ buttonGodHyg = createButton('God Hygiejne');
 buttonGodHyg.position(400, 160);
 buttonGodHyg.mousePressed("hvor meget folk smitter");
 buttonGodHyg.size(100)
-
-function slidersValue(){
+}
+function slidersValue()
+{
 fill(0,0,0);
 text("Antal personer", 400, 15);
 text("Antal syge", 400, 70)
