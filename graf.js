@@ -4,7 +4,7 @@ var myChart = new Chart(ctx, {
     data: {
       labels: ["tid"],
       datasets: [{ 
-          data: [smittetData],
+          data: smittetData,
           label: "Syge",
           borderColor: "#3e95cd",
           fill: false
