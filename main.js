@@ -1,13 +1,25 @@
 ///<reference path="p5.global-mode.d.ts" />
 var dodRate = 3.5;
+
 var spredningPos;
 var spredningStr;
+
 var cirkelAntal = 100;
+
 var normalAntal = cirkelAntal;
+var normalFarve;
+
 var smittetAntal = 0;
+var smittetFarve;
+
 var helbredtAntal = 0;
+var helbredtFarve;
+
 var foolAntal = 0;
+var foolFarve;
+
 var dodAntal = 0;
+var dodFarve;
 
 function setup()
 {
@@ -17,6 +29,12 @@ function setup()
     
     spredningPos = createVector(0, 0);
     spredningStr = createVector(400, 400);
+
+    normalFarve = color(0, 0, 255);
+    smittetFarve = color(255, 0, 0);
+    helbredtFarve = color(0, 255, 0);
+    foolFarve = color(255, 150, 0);
+    dodFarve = color(0);
     
     cirkelListe=[new Cirkel(1, spredningStr)];
     for (i=0; i<cirkelAntal; i++)
