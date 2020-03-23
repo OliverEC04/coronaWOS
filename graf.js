@@ -9,7 +9,25 @@ var myChart = new Chart(ctx, {
           borderColor: "#3e95cd",
           fill: false
         
-        }
+        },{ 
+          data: [helbredtAntal],
+          label: "Helbredt",
+          borderColor: "#3e95cd",
+          fill: false
+        
+        },{ 
+            data: [dodAntal],
+            label: "Dode",
+            borderColor: "#3e95cd",
+            fill: false
+          
+          },{ 
+            data: [foolAntal],
+            label: "Fools",
+            borderColor: "#3e95cd",
+            fill: false
+          
+          }
       ]
     },
     options: {
