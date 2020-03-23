@@ -27,7 +27,7 @@ function draw()
     clear();
     frameRate(60);
     slidersValue()
-
+    forklaring(spredningStr);
 
     for (i=0; i<cirkelAntal; i++)
     {
