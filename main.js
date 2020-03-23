@@ -89,28 +89,32 @@ function draw()
         if (cirkelListe[i].status == 0)
         {
             normalAntal++;
-            normalData.push(normalAntal);
         }
         if (cirkelListe[i].status == 1)
         {
             smittetAntal++;
-            smittetData.push(smittetAntal);
         }
         if (cirkelListe[i].status == 2)
         {
             helbredtAntal++;
-            helbredtData.push(helbredtAntal);
         }
         if (cirkelListe[i].status == 3)
         {
             foolAntal++;
-            foolData.push(foolAntal);
         }
         if (cirkelListe[i].status == 4)
         {
             dodAntal++;
-            dodData.push(dodAntal);
         }
     }
+
+    normalData.push(normalAntal);
+    smittetData.push(smittetAntal);
+    helbredtData.push(helbredtAntal);
+    foolData.push(foolAntal);
+    dodData.push(dodAntal);
+
+    console.log(smittetAntal);
+    console.log(smittetData);
 }
 
