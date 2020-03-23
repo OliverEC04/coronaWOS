@@ -50,7 +50,7 @@ class Cirkel
         {
           if (random(0, 100) < dodRate)
           {
-            this.status = 3;
+            this.status = 4;
           }
           else
           {
@@ -94,7 +94,7 @@ class Cirkel
     }
     
     // død
-    if (this.status == 3)
+    if (this.status == 4)
     {
       this.farve = color(0);
     }
