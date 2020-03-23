@@ -7,6 +7,7 @@ class Cirkel
     this.window = window;
     this.position = createVector(random(window.x), random(window.y));
     this.dia = 10;
+    this.nedtalling = 1000;
   }
 
   overlap(other)
@@ -42,6 +43,20 @@ class Cirkel
       if (this.status == 1)
       {
         this.farve = color(255, 0, 0);
+
+        this.nedtalling -= 1;
+
+        if (this.nedtalling == 0)
+        {
+          if (random(0, 100) < dodRate)
+          {
+            this.status = 4;
+          }
+          else
+          {
+            this.status = 2;
+          }
+        }
       }
 
       // helbredt
@@ -79,7 +94,7 @@ class Cirkel
     }
     
     // død
-    if (this.status == 3)
+    if (this.status == 4)
     {
       this.farve = color(0);
     }

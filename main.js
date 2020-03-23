@@ -1,4 +1,5 @@
 ///<reference path="p5.global-mode.d.ts" />
+var dodRate = 3.5;
 
 function setup()
 {
