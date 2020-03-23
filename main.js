@@ -46,12 +46,10 @@ function draw()
                 if (cirkelListe[i].status == 0)
                 {
                     cirkelListe[i].status = 1;
-                    console.log(normalAntal + " " + smittetAntal);
                 }
                 if (cirkelListe[j].status == 0)
                 {
                     cirkelListe[j].status = 1;
-                    console.log(normalAntal + " " + smittetAntal);
                 }
             }
         }
