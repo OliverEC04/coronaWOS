@@ -5,6 +5,7 @@ function setup()
     var rammeStr = createVector(windowWidth, windowHeight);
     var ramme = createCanvas(rammeStr.x, rammeStr.y);
     ramme.position(0, 0);
+    indstillinger = sliders 
 
     var spredningStr = createVector(400, 400);
     cirkelAntal = 100;
@@ -23,6 +24,7 @@ function draw()
 {
     clear();
     frameRate(60);
+
 
     for (i=0; i<cirkelAntal; i++)
     {
