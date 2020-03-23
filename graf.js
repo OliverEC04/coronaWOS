@@ -2,7 +2,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: [tid],
+      labels: ["tid"],
       datasets: [{ 
           data: [sygeAntal],
           label: "Syge",
