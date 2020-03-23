@@ -37,14 +37,14 @@ function draw()
         {
             if(i != j && cirkelListe[i].overlap(cirkelListe[j]) && (cirkelListe[i].status == 1 || cirkelListe[j].status == 1))
             {
-                if (cirkelListe[i].status != 1)
+                if (cirkelListe[i].status == 0)
                 {
                     cirkelListe[i].status = 1;
                     raskeAntal--;
                     sygeAntal++;
                     console.log(raskeAntal + " " + sygeAntal);
                 }
-                if (cirkelListe[j].status != 1)
+                if (cirkelListe[j].status == 0)
                 {
                     cirkelListe[j].status = 1;
                     raskeAntal--;
