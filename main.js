@@ -26,6 +26,7 @@ function draw()
 {
     clear();
     frameRate(60);
+    slidersValue()
 
 
     for (i=0; i<cirkelAntal; i++)

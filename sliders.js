@@ -1,7 +1,4 @@
 function sliders(){
-fill(0,0,0)
-textSize(30)
-text("Antal personer", 400, 100, 30, 10)
 sliderAntalSyge = createSlider(0,100)
 sliderAntalSyge.position(400,25)
 sliderAntalAlle = createSlider(0, 500, 100)
@@ -11,6 +8,7 @@ sliderFools.position(400,45)
 }
 
 function slidersValue(){
+text("Antal personer", 400, 5, 30, 10)
 let antalSyge = sliderAntalSyge.value()
 let antalAlle = sliderAntalAlle.value()
 let antalFools = sliderFools.value()
