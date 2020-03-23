@@ -35,11 +35,6 @@ class Cirkel
 
   }
 
-  forklaring(position)
-  {
-
-  }
-
   update()
   {
     if (this.status == 0 || this.status == 1 || this.status == 2 || this.status == 3)
