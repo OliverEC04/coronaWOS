@@ -33,6 +33,8 @@ function draw()
     slidersValue()
     forklaring(spredningPos, spredningStr);
 
+    for (i; cirkelListe)
+
     for (i=0; i<cirkelAntal; i++)
     {
         cirkelListe[i].update();
