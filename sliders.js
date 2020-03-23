@@ -1,6 +1,6 @@
 function sliders(){
 fill(0,0,0)
-text("Antal personer", 300, 100)
+text("Antal personer", 400, 100)
 sliderAntalSyge = createSlider(0,100)
 sliderAntalSyge.position(400,25)
 sliderAntalAlle = createSlider(0, 500, 100)
