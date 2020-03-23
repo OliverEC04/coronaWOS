@@ -4,25 +4,25 @@ var myChart = new Chart(ctx, {
     data: {
       labels: ["tid"],
       datasets: [{ 
-          data: [smittetAntal],
+          data: [smittetData],
           label: "Syge",
           borderColor: "#3e95cd",
           fill: false
         
         },{ 
-          data: [helbredtAntal],
+          data: [helbredtData],
           label: "Helbredt",
           borderColor: "#3e95cd",
           fill: false
         
         },{ 
-            data: [dodAntal],
+            data: [dodData],
             label: "Dode",
             borderColor: "#3e95cd",
             fill: false
           
           },{ 
-            data: [foolAntal],
+            data: [foolData],
             label: "Fools",
             borderColor: "#3e95cd",
             fill: false
