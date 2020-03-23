@@ -113,8 +113,4 @@ function draw()
     helbredtData.push(helbredtAntal);
     foolData.push(foolAntal);
     dodData.push(dodAntal);
-
-    console.log(smittetAntal);
-    console.log(smittetData);
 }
-
