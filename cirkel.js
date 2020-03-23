@@ -7,7 +7,7 @@ class Cirkel
     this.window = window;
     this.position = createVector(random(window.x), random(window.y));
     this.dia = 10;
-    this.nedtalling = 10000;
+    this.nedtalling = 5000;
   }
 
   overlap(other)
