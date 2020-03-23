@@ -3,7 +3,7 @@ class Cirkel
   constructor(status, window)
   {
     this.status = status;
-    this.farve = color(0, 255, 0);
+    this.farve = color(0, 0, 255);
     this.window = window;
     this.position = createVector(random(window.x), random(window.y));
     this.dia = 10;
@@ -62,7 +62,7 @@ class Cirkel
       // helbredt
       if (this.status == 2)
       {
-        this.farve = color(0, 0, 255);
+        this.farve = color(0, 255, 0);
       }
 
       // fool
