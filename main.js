@@ -1,7 +1,7 @@
 ///<reference path="p5.global-mode.d.ts" />
 var dodRate = 3.5;
-var spredningPos = createVector(0, 0);
-var spredningStr = createVector(400, 400);
+var spredningPos;
+var spredningStr;
 
 function setup()
 {
@@ -11,6 +11,8 @@ function setup()
     sliders() 
 
     // 0 = ikke smittet, 1 = smittet, 2 = helbredt, 3 = fool, 4 = død
+    spredningPos = createVector(0, 0);
+    spredningStr = createVector(400, 400);
     cirkelAntal = 100;
     raskeAntal = cirkelAntal;
     sygeAntal = 1;
