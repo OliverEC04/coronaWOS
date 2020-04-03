@@ -30,7 +30,7 @@ var myChart = new Chart(ctx, {
           }
       ]
     },
-    options: {
+    options: { responsive: true,
       title: {
         display: true,
         text: 'Covid-19'
