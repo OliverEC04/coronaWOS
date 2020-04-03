@@ -25,5 +25,10 @@ class Graf
             line(this.xData[i], smittetData[i], this.xData[i-1], smittetData[i-1] );
         }
         
+    for (i = 0; i < this.yMax; i++)
+        {
+            line(this.xData[i], smittetData[i], this.this.xData[i-1], smittetData[i-1] );
+        }
+        
     }
 }
