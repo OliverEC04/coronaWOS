@@ -2,7 +2,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: ["tid"],
+      labels: [1, 2, 3, 4, 5, 6, 7, 8],
       datasets: [{ 
           data: smittetData,
           label: "Syge",
@@ -10,19 +10,19 @@ var myChart = new Chart(ctx, {
           fill: false
         
         },{ 
-          data: [helbredtData],
+          data: helbredtData,
           label: "Helbredt",
           borderColor: "#3e95cd",
           fill: false
         
         },{ 
-            data: [dodData],
+            data: dodData,
             label: "Dode",
             borderColor: "#3e95cd",
             fill: false
           
           },{ 
-            data: [foolData],
+            data: foolData,
             label: "Fools",
             borderColor: "#3e95cd",
             fill: false
@@ -37,3 +37,6 @@ var myChart = new Chart(ctx, {
       }
     }
   });
+
+  myLineChart.data.datasets[0].data[2] = 50; // Would update the first dataset's value of 'March' to be 50
+myLineChart.update(); // Calling update now animates the position of March from 90 to 50.
