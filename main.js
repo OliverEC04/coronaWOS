@@ -33,7 +33,7 @@ function setup()
     ramme.position(0, 0);
     
     spredningPos = createVector(0, 0);
-    spredningStr = createVector(400, 400);
+    spredningStr = createVector(600, 600);
 
     normalFarve = color(0, 0, 255);
     smittetFarve = color(255, 0, 0);
@@ -48,6 +48,8 @@ function setup()
     }
 
     sliders() 
+
+    graf = new Graf([1, 2, 3, 4, 5, 6, 7, 8], [1, 2 , 3, 4, 5, 6], 10, 12, spredningStr, spredningPos);
 }
 
 function draw()
@@ -56,6 +58,9 @@ function draw()
     frameRate(60);
     slidersValue()
     forklaring(spredningPos, spredningStr);
+
+    graf.update();
+    graf.draw();
 
     for (i=0; i<cirkelAntal; i++)
     {
