@@ -49,7 +49,7 @@ function setup()
 
     sliders() 
 
-    graf = new Graf([1, 2, 3, 4, 5, 6, 7, 8], [1, 2 , 3, 4, 5, 6], 10, 12, spredningStr, spredningPos);
+    graf = new Graf([0], [1, 2 , 3, 4, 5, 6], 10, 12, spredningStr, spredningPos);
 }
 
 function draw()
@@ -58,6 +58,10 @@ function draw()
     frameRate(60);
     slidersValue()
     forklaring(createVector(spredningPos.x, spredningPos.y + 10), spredningStr);
+
+    tid = 0;
+    tid++;
+    graf.xData.push(tid);
 
     graf.update();
     graf.draw();
