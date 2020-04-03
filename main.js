@@ -52,7 +52,11 @@ function setup()
 
     sliders() 
 
-    graf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos);
+    normalGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos);
+    smittetGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos);
+    helbredtGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos);
+    foolGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos);
+    dodGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos);
 }
 
 function draw()
@@ -63,13 +67,24 @@ function draw()
     forklaring(createVector(spredningPos.x, spredningPos.y + 10), spredningStr);
 
     tid++;
-    graf.xData.push(tid);
-    graf.xMax = tid;
+    smittetGraf.xData.push(tid);
+    smittetGraf.xMax = tid;
+    smittetGraf.yData = smittetData;
 
-    graf.yData = smittetData;
+    normalGraf.update();
+    normalGraf.draw();
 
-    graf.update();
-    graf.draw();
+    smittetGraf.update();
+    smittetGraf.draw();
+
+    helbredtGraf.update();
+    helbredtGraf.draw();
+
+    foolGraf.update();
+    foolGraf.draw();
+
+    dodGraf.update();
+    dodGraf.draw();
 
     for (i=0; i<cirkelAntal; i++)
     {

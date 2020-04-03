@@ -16,7 +16,7 @@ buttonMellemHyg = createButton('Mellem hygiene');
 buttonMellemHyg.position(pos.x , 200);
 buttonMellemHyg.mousePressed("folk smitter 1,8 val.");
 buttonMellemHyg.size(100)
-buttonDarligHyg = createButton('Dalig hygiene');
+buttonDarligHyg = createButton('Darlig hygiene');
 buttonDarligHyg.position(pos.x, 240);
 buttonDarligHyg.mousePressed("folk smitter 2,8 val.");
 buttonDarligHyg.size(100)
@@ -24,12 +24,13 @@ buttonDarligHyg.size(100)
 function slidersValue()
 {
 fill(0,0,0);
-text("Antal personer", pos.x, 15);
-text("Antal syge", pos.x, 70)
-text("Antal fools", pos.x, 125)
+text("Antal personer", pos.x + 50, 15);
+text("Antal syge", pos.x + 50, 70)
+text("Antal fools", pos.x + 50, 125)
 let antalSyge = sliderAntalSyge.value();
 let antalAlle = sliderAntalAlle.value();
 let antalFools = sliderFools.value();
 
 //Alle bliver inde og holder meget god hygien, De fleste bliver inde og god hygiene, Folk bevæger sig lidt rund, som vi gør nu og tænker ikke så meget på hygiene
+}
 }
