@@ -22,7 +22,7 @@ class Graf
 
         for (i = 0; i < this.yMax; i++)
         {
-            line(this.xData[i], this.pos.y + this.str.y - this.yData[i], this.xData[i-1], this.pos.y + this.str.y - this.yData[i-1] );
+            line(this.xData[i], this.pos.y + this.str.y - this.yData[i], this.xData[i-1], this.pos.y + this.str.y - this.yData[i-1]);
         }        
     }
 }
