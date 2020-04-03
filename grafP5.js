@@ -20,7 +20,7 @@ class Graf
         line(this.pos.x, this.pos.y + this.str.y, this.pos.x + this.str.x, this.pos.y + this.str.y); //x-akse
         line(this.pos.x, this.pos.y + this.str.y, this.pos.x, this.pos.y); //y-akse
 
-        for (i = 0; i < this.yMax; i++)
+        for (i = 0; i < this.xMax; i++)
         {
             line(this.xData[i], this.pos.y + this.str.y - this.yData[i], this.xData[i-1], this.pos.y + this.str.y - this.yData[i-1]);
         }        
