@@ -33,4 +33,3 @@ let antalFools = sliderFools.value();
 
 //Alle bliver inde og holder meget god hygien, De fleste bliver inde og god hygiene, Folk bevæger sig lidt rund, som vi gør nu og tænker ikke så meget på hygiene
 }
-}
