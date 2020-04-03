@@ -57,7 +57,7 @@ function draw()
     clear();
     frameRate(60);
     slidersValue()
-    forklaring(spredningPos, spredningStr);
+    forklaring(createVector(spredningPos.x, spredningPos.y + 10), spredningStr);
 
     graf.update();
     graf.draw();
