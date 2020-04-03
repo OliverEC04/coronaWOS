@@ -38,5 +38,7 @@ var myChart = new Chart(ctx, {
     }
   });
 
+/*
   myLineChart.data.datasets[0].data[2] = 50; // Would update the first dataset's value of 'March' to be 50
 myLineChart.update(); // Calling update now animates the position of March from 90 to 50.
+*/

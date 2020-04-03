@@ -14,10 +14,10 @@ buttonMellemHyg = createButton(' De fleste bliver inde og god hygiene');
 buttonMellemHyg.position(430, 160);
 buttonMellemHyg.mousePressed("folk smitter 1,8 val.");
 buttonMellemHyg.size(100)
-buttonDårligHyg = createButton('Folk bevæger sig lidt rund, som vi gør nu og tænker ikke så meget på hygiene');
-buttonDårligHyg.position(460, 160);
-buttonDårligHyg.mousePressed("folk smitter 2,8 val.");
-buttonDårligHyg.size(100)
+buttonDarligHyg = createButton('Folk bevæger sig lidt rund, som vi gør nu og tænker ikke så meget på hygiene');
+buttonDarligHyg.position(460, 160);
+buttonDarligHyg.mousePressed("folk smitter 2,8 val.");
+buttonDarligHyg.size(100)
 }
 function slidersValue()
 {
