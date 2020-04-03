@@ -52,7 +52,7 @@ function setup()
 
     sliders() 
 
-    graf = new Graf([0], [0], 1000, cirkelAntal, spredningStr, spredningPos);
+    graf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos);
 }
 
 function draw()
@@ -64,6 +64,7 @@ function draw()
 
     tid++;
     graf.xData.push(tid);
+    graf.xMax = tid;
 
     graf.yData = smittetData;
 

@@ -24,7 +24,7 @@ class Graf
         {
             stroke(255,0,0)
             strokeWeight(5)
-            line(this.xData[i], this.pos.y + this.str.y - this.yData[i], this.xData[i-1], this.pos.y + this.str.y - this.yData[i-1]);
+            line(this.xData[i-1] / this.xMax * this.str.x, this.pos.y + this.str.y - this.yData[i-1] / this.yMax * this.str.y, this.xData[i] / this.xMax * this.str.x, this.pos.y + this.str.y - this.yData[i] / this.yMax * this.str.y);
             stroke(0)
             strokeWeight(1)
         }        
