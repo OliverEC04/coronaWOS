@@ -22,7 +22,10 @@ class Graf
 
         for (i = 0; i < this.xMax; i++)
         {
+            fill(255,0,0)
+            strokeWeight(5)
             line(this.xData[i], this.pos.y + this.str.y - this.yData[i], this.xData[i-1], this.pos.y + this.str.y - this.yData[i-1]);
+            strokeWeight(1)
         }        
     }
 }

@@ -67,9 +67,6 @@ function draw()
 
     graf.yData = smittetData;
 
-    console.log("x: " + graf.xData);
-    console.log("y: " + graf.yData);
-
     graf.update();
     graf.draw();
 
