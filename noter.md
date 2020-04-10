@@ -1,4 +1,4 @@
 # Noter
 * Sliders
 * Knapper
-* Grafer
+* Reset

@@ -52,10 +52,10 @@ function setup()
 
     sliders() 
 
-    normalGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, color(0, 0, 255));
-    smittetGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, color(255, 0, 0));
-    helbredtGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, color(0, 255, 0));
-    dodGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, color(0, 0, 0));
+    normalGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, normalFarve);
+    smittetGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, smittetFarve);
+    helbredtGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, helbredtFarve);
+    dodGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, dodFarve);
 }
 
 function draw()
@@ -113,7 +113,7 @@ function draw()
     }
 
     normalAntal = 0;
-    smittetAntal = 0;
+    smittetAntal = antalSyge;
     helbredtAntal = 0;
     foolAntal = 0;
     dodAntal = 0;

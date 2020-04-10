@@ -1,3 +1,4 @@
+var antalSyge;
 
 function sliders(){
     pos = createVector(600, 0);
@@ -27,9 +28,9 @@ fill(0,0,0);
 text("Antal personer", pos.x + 50, 15);
 text("Antal syge", pos.x + 50, 70)
 text("Antal fools", pos.x + 50, 125)
-let antalSyge = sliderAntalSyge.value();
-let antalAlle = sliderAntalAlle.value();
-let antalFools = sliderFools.value();
+antalSyge = sliderAntalSyge.value();
+antalAlle = sliderAntalAlle.value();
+antalFools = sliderFools.value();
 
 //Alle bliver inde og holder meget god hygien, De fleste bliver inde og god hygiene, Folk bevæger sig lidt rund, som vi gør nu og tænker ikke så meget på hygiene
 }
