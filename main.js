@@ -5,6 +5,7 @@ var spredningPos;
 var spredningStr;
 
 var cirkelAntal;
+var antalSyge = 1;
 
 var normalAntal = cirkelAntal;
 var normalData = [];
@@ -54,9 +55,9 @@ function setup()
         cirkelListe.push(new Cirkel(0, spredningStr));
     }
 
-        for (i=0; i<antalSyge; i++)
+    for (i=0; i<antalSyge; i++)
     {
-        cirkelListe.push(new Cirkel(0, spredningStr));
+        cirkelListe.push(new Cirkel(1, spredningStr));
     }
 
     resetKnap = new Reset(createVector(100, 40), createVector(spredningPos.x + spredningStr.x, spredningPos.y + 400));

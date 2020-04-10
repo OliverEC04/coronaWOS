@@ -7,7 +7,7 @@ function sliders(){
 
 sliderAntalSyge = createSlider(0,100)
 sliderAntalSyge.position(pos.x,75)
-sliderAntalAlle = createSlider(0, 500, 100)
+sliderAntalAlle = createSlider(0, 1000, 1000)
 sliderAntalAlle.position(pos.x,20)
 sliderFools = createSlider(0,100,2)
 sliderFools.position(pos.x,130)
