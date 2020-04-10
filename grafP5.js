@@ -24,7 +24,7 @@ class Graf
         for (i = 0; i < this.xMax; i++)
         {
             stroke(this.farve);
-            strokeWeight(5)
+            strokeWeight(3)
             line(this.xData[i-1] / this.xMax * this.str.x, 
                 this.pos.y + this.str.y - this.yData[i-1] / this.yMax * this.str.y, 
                 this.xData[i] / this.xMax * this.str.x, 
