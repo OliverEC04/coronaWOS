@@ -1,6 +1,6 @@
 class Graf
 {
-    constructor(xData, yData, xMax, yMax, str, pos)
+    constructor(xData, yData, xMax, yMax, str, pos, farve)
     {
         this.xData = xData;
         this.yData = yData;
@@ -8,6 +8,7 @@ class Graf
         this.yMax = yMax;
         this.str = str;
         this.pos = pos;
+        this.farve = farve;
     }
 
     update()
@@ -22,7 +23,7 @@ class Graf
 
         for (i = 0; i < this.xMax; i++)
         {
-            stroke(255,0,0)
+            stroke(this.farve);
             strokeWeight(5)
             line(this.xData[i-1] / this.xMax * this.str.x, 
                 this.pos.y + this.str.y - this.yData[i-1] / this.yMax * this.str.y, 

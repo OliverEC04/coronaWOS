@@ -52,11 +52,10 @@ function setup()
 
     sliders() 
 
-    normalGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos);
-    smittetGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos);
-    helbredtGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos);
-    foolGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos);
-    dodGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos);
+    normalGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, (0, 0, 255));
+    smittetGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos,(255, 0, 0));
+    helbredtGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, (0, 255, 0));
+    dodGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, (0, 0, 0));
 }
 
 function draw()
@@ -67,22 +66,28 @@ function draw()
     forklaring(createVector(spredningPos.x, spredningPos.y + 10), spredningStr);
 
     tid++;
-    smittetGraf.xData.push(tid);
-    smittetGraf.xMax = tid;
-    smittetGraf.yData = smittetData;
 
+    normalGraf.xData.push(tid);
+    normalGraf.xMax = tid;
+    normalGraf.yData = normalData;
     normalGraf.update();
     normalGraf.draw();
 
+    smittetGraf.xData.push(tid);
+    smittetGraf.xMax = tid;
+    smittetGraf.yData = smittetData;
     smittetGraf.update();
     smittetGraf.draw();
 
+    helbredtGraf.xData.push(tid);
+    helbredtGraf.xMax = tid;
+    helbredtGraf.yData = helbredtData;
     helbredtGraf.update();
     helbredtGraf.draw();
 
-    foolGraf.update();
-    foolGraf.draw();
-
+    dodGraf.xData.push(tid);
+    dodGraf.xMax = tid;
+    dodGraf.yData = dodData;
     dodGraf.update();
     dodGraf.draw();
 
