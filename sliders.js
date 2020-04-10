@@ -1,4 +1,6 @@
 var antalSyge;
+var antalAlle;
+var antalFools;
 
 function sliders(){
     pos = createVector(600, 0);
@@ -22,8 +24,10 @@ buttonDarligHyg.position(pos.x, 240);
 buttonDarligHyg.mousePressed("folk smitter 2,8 val.");
 buttonDarligHyg.size(100)
 }
+
 function slidersValue()
 {
+    pos = createVector(600, 0);
 fill(0,0,0);
 text("Antal personer", pos.x + 50, 15);
 text("Antal syge", pos.x + 50, 70)

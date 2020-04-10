@@ -4,7 +4,7 @@ var dodRate = 3.5;
 var spredningPos;
 var spredningStr;
 
-var cirkelAntal = 100;
+var cirkelAntal;
 
 var normalAntal = cirkelAntal;
 var normalData = [];
@@ -27,7 +27,7 @@ var dodData = [];
 var dodFarve;
 
 var graf;
-tid = 0;
+var tid = 0;
 
 function setup()
 {
@@ -38,19 +38,28 @@ function setup()
     spredningPos = createVector(0, 0);
     spredningStr = createVector(600, 600);
 
+    sliders();
+    slidersValue();
+    cirkelAntal = antalAlle - antalSyge;
+
     normalFarve = color(0, 0, 255);
     smittetFarve = color(255, 0, 0);
     helbredtFarve = color(0, 255, 0);
     foolFarve = color(255, 150, 0);
     dodFarve = color(0);
     
-    cirkelListe=[new Cirkel(1, spredningStr)];
+    cirkelListe=[];
     for (i=0; i<cirkelAntal; i++)
     {
         cirkelListe.push(new Cirkel(0, spredningStr));
     }
 
-    sliders() 
+        for (i=0; i<antalSyge; i++)
+    {
+        cirkelListe.push(new Cirkel(0, spredningStr));
+    }
+
+    resetKnap = new Reset(createVector(100, 40), createVector(spredningPos.x + spredningStr.x, spredningPos.y + 400));
 
     normalGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, normalFarve);
     smittetGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, smittetFarve);
@@ -63,6 +72,7 @@ function draw()
     clear();
     frameRate(60);
     slidersValue()
+    resetKnap.drawButton();
     forklaring(createVector(spredningPos.x, spredningPos.y + 10), spredningStr);
 
     tid++;
