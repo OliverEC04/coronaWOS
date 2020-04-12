@@ -60,7 +60,9 @@ function setup()
         cirkelListe.push(new Cirkel(1, spredningStr));
     }
 
-    resetKnap = new Reset(createVector(100, 40), createVector(spredningPos.x + spredningStr.x, spredningPos.y + 400));
+    resetBtn = createButton('Reset');
+    resetBtn.size(100, 40);
+    resetBtn.position(spredningPos.x + spredningStr.x, spredningPos.y + 400);
 
     normalGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, normalFarve);
     smittetGraf = new Graf([0], [0], 1, cirkelAntal, spredningStr, spredningPos, smittetFarve);
@@ -72,10 +74,12 @@ function draw()
 {
     clear();
     frameRate(60);
-    slidersValue()
-    resetKnap.drawButton();
+    slidersValue();
+    resetBtn.mousePressed(reset);
     forklaring(createVector(spredningPos.x, spredningPos.y + 10), spredningStr);
 
+
+    cirkelAntal = antalAlle;
     tid++;
 
     normalGraf.xData.push(tid);
